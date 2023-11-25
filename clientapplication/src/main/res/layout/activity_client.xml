@@ -8,12 +8,30 @@
     android:padding="20dp"
     tools:context=".ClientActivity">
 
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="500dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="40dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Client-Server App"
+        android:textColor="#31468F"
+        android:textSize="30sp" />
+
     <Button
         android:id="@+id/btnConnectServer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:onClick="onClick"
+        android:layout_marginTop="270dp"
+        android:paddingLeft="31dp"
+        android:paddingTop="17dp"
+        android:paddingRight="31dp"
+        android:paddingBottom="17dp"
+        android:shadowColor="#0000"
         android:text="Connect to server" />
 
     <EditText
@@ -21,15 +39,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnConnectServer"
-        android:layout_marginTop="5dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="12dp"
         android:layout_marginBottom="5dp"
-        android:text="Message from Client" />
+        android:background="@drawable/button_input"
+        android:hint="Message to Server"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/send_data"
-        android:layout_below="@+id/edMessage">
+        android:layout_below="@+id/edMessage"
+        android:layout_marginTop="27dp"
+        android:layout_marginBottom="-16dp">
 
         <LinearLayout
             android:id="@+id/msgList"
@@ -44,6 +70,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:paddingLeft="31dp"
+        android:paddingTop="17dp"
+        android:paddingRight="31dp"
+        android:paddingBottom="17dp"
+        android:shadowColor="#0000"
         android:onClick="onClick"
         android:text="Send Message to server"
         android:textColor="@android:color/white" />
